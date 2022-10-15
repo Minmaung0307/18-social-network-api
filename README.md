@@ -1,46 +1,11 @@
 # social-network-api
 
-### Users
+Links:
+Github: git@github.com:Minmaung0307/18-social-network-api.git
 
-- Find All Users
-  - ./api/users
-- Find Single User
-  - ./api/users/:id
-- Create
-  - ./api/users
-    {"username":, "email":}
-- Update
-  - ./api/users/:id
-- Delete
-  - ./api/users/:id
+URL: https://minmaung0307.github.io/18-social-network-api/
 
-### Friends
+https://github.com/Minmaung0307/18-social-network-api
 
-- Add Friend
-  - ./api/users/user:id/friends/friend:id
-- Delete
-  - ./api/users/friend:id
-
-### Thoughts
-
-- Find All Thoughts
-  - ./api/thoughts
-- Find Single Thought
-  - ./api/thoughts/:id
-- Create
-  - ./api/thoughts
-    {"thoughtText":, "username":}
-- Update
-  - ./api/thoughts/:thought_id
-- Delete
-  - ./api/thoughts/:id from user's 'thoughts' field id
-
-### Reactions
-
-- Create
-  - ./api/thoughts/thought_id/reactions
-    {"thoughtText":, "username":}
-- Update
-  - ./api/thoughts/thought_id/reactions/reaction_id
-- Delete
-  - ./api/thoughts/thought_id/reactions/reaction_id
+Video:
+https://watch.screencastify.com/v/FPV2YW3r2G8yZURa7JUE

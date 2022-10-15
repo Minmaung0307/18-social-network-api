@@ -1,7 +1,7 @@
 const { Thought, User } = require("../models");
 
 const thoughtController = {
-  // Get all thoughts
+  // All Thoughts
   getThoughts(req, res) {
     Thought.find()
       .sort({ createdAt: -1 })
@@ -14,7 +14,7 @@ const thoughtController = {
       });
   },
 
-  // Get a single thought by id
+  // Single Thought by thought_id
   getSingleThought(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
@@ -31,7 +31,7 @@ const thoughtController = {
       });
   },
 
-  // Create a thought
+  // Create Thought with username
   createThought(req, res) {
     Thought.create(req.body)
       .then((dbThoughtData) => {
@@ -56,7 +56,7 @@ const thoughtController = {
       });
   },
 
-  // Update a thought
+  // Update Thought with thought_id
   updateThought(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -77,7 +77,7 @@ const thoughtController = {
       });
   },
 
-  // Delete a thought
+  // Delete Thought with thought_id
   deleteThought(req, res) {
     Thought.findOneAndRemove({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
@@ -87,7 +87,7 @@ const thoughtController = {
             .json({ message: "Thought with this ID does not exist." });
         }
 
-        // remove thought id from user's `thoughts` field
+        // remove thought_id from user's `thoughts` field
         return User.findOneAndUpdate(
           { thoughts: req.params.thoughtId },
           { $pull: { thoughts: req.params.thoughtId } },
@@ -108,7 +108,7 @@ const thoughtController = {
       });
   },
 
-  // Add a reaction to a thought
+  // Add Reaction to thought {"reactionBody": and "username":}
   addReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -129,7 +129,7 @@ const thoughtController = {
       });
   },
 
-  // Remove reaction from a thought
+  // Remove Reaction with reaction_id
   removeReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },

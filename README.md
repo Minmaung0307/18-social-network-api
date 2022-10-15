@@ -1,11 +1,11 @@
-# social-network-api
+# Social-Network-Api
 
-Links:
-Github: git@github.com:Minmaung0307/18-social-network-api.git
+## Click the Links:
 
-URL: https://minmaung0307.github.io/18-social-network-api/
+[Github:](git@github.com:Minmaung0307/18-social-network-api.git)
 
-https://github.com/Minmaung0307/18-social-network-api
+[URL:1](https://minmaung0307.github.io/18-social-network-api/)
 
-Video:
-https://watch.screencastify.com/v/FPV2YW3r2G8yZURa7JUE
+[URL:2](https://github.com/Minmaung0307/18-social-network-api)
+
+[Video:](https://watch.screencastify.com/v/FPV2YW3r2G8yZURa7JUE)
